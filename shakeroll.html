@@ -7,13 +7,13 @@
 </head>
 <body>
 
-<div id="dmEvent"></div>
+<div id="dmEvent">摇一摇roll点！！</div>
 <div id="inputDiv"></div>
 <script>
-var SHAKE_THRESHOLD = 5000;
+var SHAKE_THRESHOLD = 3000;
 var last_update = 0;
 var x, y, z, last_x = 0, last_y = 0, last_z = 0;
-
+var count = 0;
 function deviceMotionHandler(eventData) {
     var acceleration =eventData.accelerationIncludingGravity;
     var curTime = new Date().getTime();
