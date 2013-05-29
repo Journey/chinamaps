@@ -25,6 +25,7 @@ function deviceMotionHandler(eventData) {
        // z = acceleration.z;
         //var speed = Math.abs(x +y + z - last_x - last_y - last_z) / diffTime * 10000;
 		var speed = Math.abs(x - last_x) / diffTime * 10000;
+		alert(speed);
         if (speed > SHAKE_THRESHOLD) {
             createInput();
         }
